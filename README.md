@@ -90,14 +90,17 @@ Cloud Deployment (Streamlit Community Cloud)
 ## 8. Repository Structure
 ```
 business-analytics-project/
-├── app.py                          # 3-Page Streamlit Web Application
-├── model.pkl                       # Trained serialized Scikit-Learn pipeline
-├── requirements.txt                # Python environment dependencies
-├── README.md                       # Comprehensive project documentation
+├── app.py                               # Redesigned Commercial Streamlit Decision Platform
+├── model.pkl                            # Trained serialized Scikit-Learn pipeline
+├── requirements.txt                     # Python environment dependencies
+├── README.md                            # Comprehensive project documentation
+├── PROJECT_WALKTHROUGH_REPORT.md        # Plain-English viva & project walkthrough guide
+├── MLBA_Assignment_2_Project_Report.docx # Formatted academic Word project report
+├── MLBA_Assignment_2_Presentation.pptx   # Professional 8-slide executive presentation
 ├── data/
-│   └── german_credit_data.csv      # Raw dataset (1,000 records)
+│   └── german_credit_data.csv           # Raw dataset (1,000 records)
 ├── notebooks/
-│   └── model_development.ipynb    # Step-by-step Jupyter Notebook
+│   └── model_development.ipynb         # Fully executed notebook with outputs & charts
 └── images/
     ├── fig1_risk_distribution.png
     ├── fig2_checking_vs_default.png
@@ -111,8 +114,8 @@ business-analytics-project/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/business-analytics-project.git
-   cd business-analytics-project
+   git clone https://github.com/Akshit226/streamlit-app-MLBA-02-.git
+   cd streamlit-app-MLBA-02-
    ```
 
 2. **Create and activate a virtual environment (optional but recommended):**
@@ -138,7 +141,7 @@ business-analytics-project/
 ---
 
 ## 10. Cloud Deployment Guide (Streamlit Community Cloud)
-1. Push this directory to your personal or team GitHub repository.
-2. Visit [share.streamlit.io](https://share.streamlit.io) and log in with your GitHub account.
-3. Click **"New App"** $\rightarrow$ Select your repository, branch (`main`), and set Main file path to `app.py`.
-4. Click **"Deploy"**. Your live decision tool will be accessible worldwide in ~2 minutes!
+1. Repository is synced at: `https://github.com/Akshit226/streamlit-app-MLBA-02-`
+2. Connect your GitHub account at [share.streamlit.io](https://share.streamlit.io).
+3. Set visibility to **Public** under app settings so all faculty and evaluators can interact without logging in.
+
