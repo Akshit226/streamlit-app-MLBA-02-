@@ -43,15 +43,16 @@ st.markdown("""
         animation: fadeInUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
 
-    /* Executive Top App Banner */
+    /* Executive Top App Banner - Blue & Gold/Yellow */
     .brand-banner {
-        background: linear-gradient(135deg, #0A192F 0%, #1E3A8A 100%);
+        background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 60%, #172554 100%);
         border-radius: 14px;
         padding: 24px 30px;
         color: #FFFFFF;
         margin-bottom: 24px;
-        box-shadow: 0 10px 25px -5px rgba(10, 25, 47, 0.15);
-        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.25);
+        border: 1px solid rgba(245, 158, 11, 0.35);
+        border-left: 6px solid #F59E0B;
     }
     .brand-banner h1 {
         font-size: 26px;
@@ -62,36 +63,47 @@ st.markdown("""
     }
     .brand-banner p {
         font-size: 14px;
-        color: #94A3B8;
+        color: #CBD5E1;
         margin: 6px 0 0 0;
         font-weight: 400;
     }
+    .gold-badge {
+        background: rgba(245, 158, 11, 0.15);
+        border: 1px solid #F59E0B;
+        color: #FDE047;
+        border-radius: 8px;
+        padding: 6px 14px;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+    }
 
-    /* Live Operational Status Pill */
+    /* Live Operational Status Pill - Blue & Yellow */
     .status-pill {
         display: inline-flex;
         align-items: center;
-        gap: 6px;
-        background: rgba(16, 185, 129, 0.12);
-        color: #059669;
+        gap: 8px;
+        background: rgba(30, 58, 138, 0.08);
+        color: #1E3A8A;
         font-size: 12px;
-        font-weight: 600;
-        padding: 4px 12px;
+        font-weight: 700;
+        padding: 5px 14px;
         border-radius: 20px;
-        border: 1px solid rgba(16, 185, 129, 0.25);
+        border: 1.5px solid #F59E0B;
     }
     .status-dot {
-        width: 7px;
-        height: 7px;
-        background-color: #10B981;
+        width: 8px;
+        height: 8px;
+        background-color: #F59E0B;
         border-radius: 50%;
-        box-shadow: 0 0 8px #10B981;
+        box-shadow: 0 0 8px #F59E0B;
     }
 
-    /* Institutional Cards */
+    /* Institutional Cards - Blue & Yellow accents */
     .fintech-card {
         background: #FFFFFF;
         border: 1px solid #E2E8F0;
+        border-top: 3px solid #1E3A8A;
         border-radius: 12px;
         padding: 20px 22px;
         margin-bottom: 18px;
@@ -99,8 +111,9 @@ st.markdown("""
         transition: all 0.25s ease;
     }
     .fintech-card:hover {
-        border-color: #CBD5E1;
-        box-shadow: 0 8px 24px -4px rgba(15, 23, 42, 0.08);
+        border-color: #F59E0B;
+        border-top: 3px solid #F59E0B;
+        box-shadow: 0 10px 25px -4px rgba(30, 58, 138, 0.12);
         transform: translateY(-2px);
     }
     .card-label {
@@ -108,7 +121,7 @@ st.markdown("""
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.06em;
-        color: #64748B;
+        color: #1E3A8A;
         margin-bottom: 6px;
     }
     .card-value {
@@ -120,26 +133,28 @@ st.markdown("""
 
     /* Decision Badges */
     .badge-approved {
-        background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%);
-        border: 1px solid #6EE7B7;
-        color: #065F46;
+        background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+        border: 1.5px solid #1E3A8A;
+        color: #1E3A8A;
         padding: 16px 20px;
         border-radius: 10px;
         font-weight: 700;
         margin-bottom: 14px;
+        box-shadow: 0 4px 12px -2px rgba(30, 58, 138, 0.15);
     }
     .badge-conditional {
-        background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);
-        border: 1px solid #FCD34D;
-        color: #92400E;
+        background: linear-gradient(135deg, #FEFCE8 0%, #FEF08A 100%);
+        border: 1.5px solid #EAB308;
+        color: #854D0E;
         padding: 16px 20px;
         border-radius: 10px;
         font-weight: 700;
         margin-bottom: 14px;
+        box-shadow: 0 4px 12px -2px rgba(234, 179, 8, 0.2);
     }
     .badge-declined {
         background: linear-gradient(135deg, #FEF2F2 0%, #FEE2E2 100%);
-        border: 1px solid #FCA5A5;
+        border: 1.5px solid #EF4444;
         color: #991B1B;
         padding: 16px 20px;
         border-radius: 10px;
@@ -149,44 +164,48 @@ st.markdown("""
 
     /* Factor tags */
     .tag-positive {
-        background: #F0FDF4;
-        color: #166534;
-        border: 1px solid #BBF7D0;
-        padding: 6px 12px;
+        background: #EFF6FF;
+        color: #1E3A8A;
+        border: 1px solid #BFDBFE;
+        border-left: 4px solid #1E3A8A;
+        padding: 7px 12px;
         border-radius: 6px;
         font-size: 12px;
         font-weight: 600;
-        margin: 4px 0;
+        margin: 5px 0;
         display: block;
     }
     .tag-negative {
-        background: #FEF2F2;
-        color: #991B1B;
-        border: 1px solid #FECACA;
-        padding: 6px 12px;
+        background: #FEFCE8;
+        color: #854D0E;
+        border: 1px solid #FEF08A;
+        border-left: 4px solid #EAB308;
+        padding: 7px 12px;
         border-radius: 6px;
         font-size: 12px;
         font-weight: 600;
-        margin: 4px 0;
+        margin: 5px 0;
         display: block;
     }
 
-    /* Stylized Form Button */
+    /* Primary Action Button - Royal Blue with Warm Gold Accents */
     div.stButton > button:first-child {
         background: linear-gradient(135deg, #1E3A8A 0%, #2563EB 100%);
         color: #FFFFFF;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 15px;
-        border: none;
+        border: 1.5px solid #F59E0B;
         border-radius: 8px;
         padding: 12px 28px;
-        box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.35);
-        transition: all 0.2s ease-in-out;
+        box-shadow: 0 4px 14px 0 rgba(30, 58, 138, 0.35);
+        transition: all 0.25s ease-in-out;
     }
     div.stButton > button:first-child:hover {
-        background: linear-gradient(135deg, #172554 0%, #1D4ED8 100%);
-        box-shadow: 0 6px 20px 0 rgba(37, 99, 235, 0.45);
-        transform: translateY(-1px);
+        background: linear-gradient(135deg, #172554 0%, #1E3A8A 100%);
+        border-color: #FDE047;
+        color: #FEF08A;
+        box-shadow: 0 6px 20px 0 rgba(245, 158, 11, 0.45);
+        transform: translateY(-2px);
     }
 </style>
 """, unsafe_allow_html=True)
@@ -303,7 +322,7 @@ if page == "Executive Overview":
                     <h1>AI-Driven Credit Default Risk Analyzer</h1>
                     <p>Automated loan origination and risk-stratification decision system for commercial retail banking.</p>
                 </div>
-                <div style="background: rgba(255,255,255,0.1); border-radius: 8px; padding: 6px 14px; font-size: 12px; font-weight: 600;">
+                <div class="gold-badge">
                     Decision Tier: Tier-1 Credit
                 </div>
             </div>
@@ -696,7 +715,7 @@ elif page == "Underwriting Decision Engine":
                 
                 categories = ['Repayment\nConfidence', 'Default\nExposure']
                 scores = [prob_good * 100, prob_default * 100]
-                colors = ['#10B981', '#EF4444'] if prob_default >= 0.5 else ['#059669', '#F59E0B']
+                colors = ['#1E3A8A', '#F59E0B']  # Royal Blue and Warm Yellow/Gold theme
                 
                 bars = ax.barh(categories, scores, color=colors, height=0.45, edgecolor='none')
                 ax.set_xlim(0, 115)
