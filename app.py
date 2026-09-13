@@ -302,12 +302,12 @@ with st.sidebar:
     st.markdown("---")
     st.markdown("""
         <div style="font-size: 11px; color: #64748B; line-height: 1.6;">
-            <strong>Institutional Governance:</strong><br>
-            • Framework: Scikit-Learn Pipeline<br>
-            • Estimator: Balanced Random Forest<br>
-            • Primary Metric: Recall on Defaulters (71.7%)<br>
-            • Dataset: Statlog German Credit Data<br>
-            • Academic Course: MLBA – MBA
+            <strong>Academic Credentials:</strong><br>
+            • <strong>JAIN (Deemed-to-be University)</strong><br>
+            • CMS Business School | Class: <strong>FBA-03</strong><br>
+            • <strong>Akshit Singh</strong> (USN: 25MBAR0401)<br>
+            • <strong>Vinay Tiwari</strong> (USN: 25MBAR0247)<br>
+            • Course: MLBA – MBA (2025–2027)
         </div>
     """, unsafe_allow_html=True)
 
