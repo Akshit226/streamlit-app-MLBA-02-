@@ -205,7 +205,7 @@ business-analytics-project/
 To make the app accessible to anyone on the internet without needing Python installed on their computer:
 1. The code is synced to GitHub.
 2. Streamlit Community Cloud links to `Akshit226/streamlit-app-MLBA-02-`.
-3. When launched, Streamlit spins up a cloud server, automatically installs everything listed in `requirements.txt`, executes `app.py`, and gives you a public URL (`.streamlit.app`).
+3. When launched, Streamlit spins up a cloud server, automatically installs everything listed in `requirements.txt`, executes `app.py`, and gives you a public URL (`https://akshit226-streamlit-app-mlba-02--app-hemxe8.streamlit.app/`).
 
 ---
 

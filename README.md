@@ -11,7 +11,7 @@
 **AI-Driven Credit Default Risk Analyzer:** An end-to-end machine learning decision support system deployed via Streamlit to evaluate loan applicants, quantify default risk, and provide actionable underwriting recommendations.
 
 * **GitHub Repository:** https://github.com/Akshit226/streamlit-app-MLBA-02-
-* **Live Deployed Application:** https://streamlit-app-mlba-02.streamlit.app (After Streamlit Cloud launch)
+* **Live Deployed Application:** https://akshit226-streamlit-app-mlba-02--app-hemxe8.streamlit.app/
 
 ---
 
